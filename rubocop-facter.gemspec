@@ -5,7 +5,7 @@ require 'rubocop/facter/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'rubocop-facter'
-  spec.version       = Rubocop::Facter::VERSION
+  spec.version       = RuboCop::Facter::Version.current
   spec.authors       = ['Zee Alexander']
   spec.email         = ['zee@puppet.com']
 
