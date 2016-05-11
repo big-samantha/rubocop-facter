@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'rubocop-facter'
   spec.version       = Rubocop::Facter::VERSION
   spec.authors       = ['Zee Alexander']
-  spec.email         = ['zee@zee.space']
+  spec.email         = ['zee@puppet.com']
 
   spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
   spec.description   = %q{TODO: Write a longer description or delete this line.}
