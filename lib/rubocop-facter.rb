@@ -1,3 +1,12 @@
 require 'rubocop/facter/version'
-module rubocop/cop/facter; end
+require 'rubocop'
+require 'rubocop/facter/inject'
+
+module RuboCop
+  module Cop
+    module Facter
+
+    end
+  end
+end
 RuboCop::Facter::Inject.defaults!
