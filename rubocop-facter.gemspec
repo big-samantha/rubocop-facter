@@ -15,7 +15,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/pizzaops/rubocop-facter'
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = 'exe'
-  spec.executables   = spec.fules.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
   spec.required_ruby_version = ['>= 1.9.3', '< 2.2.0']
