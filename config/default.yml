@@ -1,0 +1,3 @@
+Facter/RequireRelative:
+  Description: 'Check that custom facts are not using require_relative'
+  Enabled: true
