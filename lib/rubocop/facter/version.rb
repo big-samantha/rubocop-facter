@@ -1,8 +1,9 @@
 module RuboCop
   module Facter
+    # Central reference point for current version of rubocop-facter
     module Version
       # rubocop:disable all
-      VERSION = '0.1.0'
+      VERSION = '0.2.0'
       # rubocop:enable all
 
       def self.current
