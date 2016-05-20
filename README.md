@@ -1,7 +1,8 @@
+[![Gem Version](https://badge.fury.io/rb/rubocop-facter.svg)](http://badge.fury.io/rb/rubocop-facter)
 # rubocop-facter
 
-The goal of `rubocop-facter` is to extend rubocop to support facter-specific checks. 
-There are various "gotchas" that apply to facter specifically, and not general Ruby programming.
+The goal of `rubocop-facter` is to extend RuboCop to support Facter-specific checks.
+There are various "gotchas" that apply to Facter specifically, and not general Ruby programming.
 
 ## Installation
 
@@ -21,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-Add the following to your module's `.rubocop.yml` file:
+Add the following to your Puppet module's `.rubocop.yml` file:
 
 ```ruby
 require:
