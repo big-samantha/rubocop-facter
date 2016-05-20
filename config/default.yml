@@ -1,3 +1,6 @@
 Facter/RequireRelative:
   Description: 'Check that custom facts are not using require_relative'
   Enabled: true
+Facter/FacterUtil:
+  Description: 'Check that facts do not require facter/util/*'
+  Enabled: true
