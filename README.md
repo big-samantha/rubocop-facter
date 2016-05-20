@@ -24,7 +24,7 @@ Or install it yourself as:
 
 Add the following to your Puppet module's `.rubocop.yml` file:
 
-```ruby
+```yaml
 require:
   - rubocop-facter
 ```
