@@ -1,5 +1,7 @@
 module RuboCop
   module Facter
+    # Because RuboCop doesn't yet support plugins, we have to monkey patch in a
+    # bit of our configuration.
     module Inject
       DEFAULT_FILE = File.expand_path(
         '../../../../config/default.yml', __FILE__

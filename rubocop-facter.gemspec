@@ -19,11 +19,13 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ['>= 1.9.3']
 
-  spec.add_dependency 'rubocop', '~> 0.33'
+  spec.add_dependency 'rubocop', '~> 0.40.0'
 
   spec.add_development_dependency 'bundler', '~> 1.11'
   spec.add_development_dependency 'rake', '~> 10.0', '< 11'
   spec.add_development_dependency 'rspec', '~> 3.0'
+  spec.add_development_dependency 'rubocop-rspec', '1.5.0'
   spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'simplecov'
   # rubocop:enable Metrics/LineLength
 end
