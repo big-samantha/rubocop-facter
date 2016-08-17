@@ -3,4 +3,5 @@ Facter/RequireRelative:
   Enabled: true
 Facter/FacterUtil:
   Description: 'Check that facts do not require facter/util/*'
+  StyleGuide: 'https://docs.puppet.com/facter/3.0/release_notes.html#break-removed-ruby-facter-implementations'
   Enabled: true
