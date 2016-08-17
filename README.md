@@ -22,11 +22,56 @@ Or install it yourself as:
 
 ## Usage
 
-Add the following to your Puppet module's `.rubocop.yml` file:
+You need to tell RuboCop to load the Facter extension. There are three
+ways to do this:
+
+### RuboCop configuration file
+
+Put this into your `.rubocop.yml`.
+
+```
+require: rubocop-facter
+```
+
+Now you can run `rubocop` and it will automatically load the RuboCop Facter
+cops together with the standard cops.
+
+### Command line
+
+```bash
+rubocop --require rubocop-facter
+```
+
+### Rake task
+
+```ruby
+RuboCop::RakeTask.new do |task|
+  task.requires << 'rubocop-facter'
+  task.options = ['-D', '-S', '-E']
+end
+```
+
+The flags `-D -S -E` used make the output a lot more useful, providing extra detail, links to the style guide, and give the cop name that failed:
+
+```
+-D, --display-cop-names          Display cop names in offense messages.
+-E, --extra-details              Display extra details in offense messages.
+-S, --display-style-guide        Display style guide URLs in offense messages.
+```
+
+## The Cops
+
+All cops are located under
+[`lib/rubocop/cop/facter`](lib/rubocop/cop/facter), and contain
+examples/documentation.
+
+In your `.rubocop.yml`, you may treat the facter cops just like any other
+cop. For example:
 
 ```yaml
-require:
-  - rubocop-facter
+Facter/FacterUtil:
+  Exclude:
+    - lib/facter/my_fact_to_ignore.rb
 ```
 
 General RuboCop installation and usage instructions can be found in the [RuboCop README](https://github.com/bbatsov/rubocop).
